@@ -1,0 +1,285 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.t{
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.t:hover{
+  color: #0ef;
+}
+.row{
+  margin-left: 50px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(90deg,#0ef,#1f242d);
+}
+main{
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  bottom: 2.5%;
+  left: 2.5%;
+  border-radius: 20px;
+  background-color: #1f242d;
+  box-shadow: 10px 10px 10px black;
+}
+
+.header {
+  width: 90%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  padding-top: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slideRight 1s ease forwards;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbar a:hover {
+  color: #0ef;
+}
+.navbar a.active {
+  color: #0ef;
+}
+.sh
+{
+  animation: zoomin 10s infinite;
+}
+@keyframes zoomin {
+  0%{
+    transform: scale(0.9);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.9);
+  }
+}
+.home-content {
+  color: white;
+}
+
+.home-content h2 {
+  font-size: 32px;
+}
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.home-content h2 span {
+  color: #0ef;
+}
+.social-media-icons {
+  margin-top: 10px;
+  display: flex;
+  padding: 0px;
+}
+.social-media-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #0ef;
+  border: 1px solid #0ef;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+  animation: slideLeft 1s;
+  animation-delay: calc(0.1s * var(--i));
+}
+.social-media-icons a:hover {
+  color: #1f242d;
+  background-color: #0ef;
+  transition: 0.5s;
+}
+.btn {
+  background-color: #0ef;
+  border-radius: 40px;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  animation: slidebottom 1s;
+}
+.btn a {
+  color: #1f242d;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+}
+.btn:hover {
+  color: #0ef;
+  background-color: #1f242d;
+  transition: 1s;
+  border: 1px solid #0ef;
+}
+.btn a:hover {
+  color: #0ef;
+}
+.hello {
+  animation: slidebottom 1s ease forwards;
+}
+.he {
+  animation: slideTop 1s ease forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidebottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.web {
+  color: #0ef;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40) infinite, 0.75s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.ofc{
+  display: none;
+  background-color: #1f242d;
+}
+
+@media screen and (max-width:700px) {
+  .navbar{
+      display: none;
+  }
+  header{
+    height: 100px;
+  }
+  h1,h2,h3,.abc{
+    text-align: center;
+  }
+  .social-media-icons{
+    justify-content: center;
+  }
+  body{
+    height: 125vh;
+
+  }
+  main{
+    position: relative;
+    top: 2.5%;
+    height: 120vh;
+  }
+  header p.logo{
+      position: absolute;
+      width: 200px;
+      top: 20px;
+      left: 10%;
+  }
+  img{
+    width:100%;
+    height: 100%;
+  }
+  .ofc{
+      display: block;
+      position: absolute;
+      right: 10%;
+      width: 100px;
+      height: 30px;
+      top: 10px;
+      background-color: #1f242d;
+      color: white;
+  }
+  .row{
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width:700px){
+
+}

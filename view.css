@@ -1,0 +1,286 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    background-image: linear-gradient(#0ef,#1f242d,#1f242d);
+ 
+}
+.container1
+{
+    width: 97%;
+    height: auto;
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #1f242d;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+.header {
+  width: 90%;
+  padding: 50px 150px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  padding-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slideRight 1s ease forwards;
+}
+.navbar{
+  padding-left: 100px;
+}
+.navbar a{
+  position: relative;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbar a:hover {
+  color: #0ef;
+}
+.navbar a.active {
+  color: #0ef;
+}
+.section1{
+  position: relative;
+  top: 20%;
+}
+.bg{
+  background-color: #1f242d;
+}
+.t{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+.fs{
+  font-size: 100px;
+  background-color: #1f242d;
+}
+.fa-html5,.html5{
+  color: orangered;
+  
+}
+.col-md-3{
+  border: 5px solid #0ef;
+  border-radius: 20px;
+  height: 400px;
+  margin: 10px;
+}
+.col-md-6{
+  border: 5px solid #0ef;
+  border-radius: 20px;
+  height: 450px;
+  margin: 10px;
+}
+.one:hover{
+  border-color: orangered;
+  transition: 0.5s;
+}
+.two:hover{
+  border-color: dodgerblue;
+  transition: 0.5s;
+}
+.three:hover{
+  border-color: rgb(255, 217, 0);
+  transition: 0.5s;
+}
+.four:hover{
+  border-color: rgb(0, 200, 255);
+  transition: 0.5s;
+}
+.five:hover{
+  border-color:#8993be;
+  transition: 0.5s;
+}
+.six:hover{
+  border-color:rgb(255, 115, 0);
+  transition: 0.5s;
+}
+.html5{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.css3{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.react{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.php{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.ofc{
+  display: none;
+}
+.database{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.js{
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.fa-css3,.css3{
+  color: dodgerblue;
+}
+.fa-js,.js{
+  color: rgb(255, 196, 0);
+}
+.fa-react,.react{
+  color: rgb(0, 191, 255);
+}
+.fa-php,.php{
+  color: #8993be;
+}
+.fa-database,.database{
+  color: rgb(255, 123, 0);
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidebottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.web {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40) infinite, 0.75s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (max-width:800px){
+  .fs{
+    font-size: 100px;
+    background-color: #1f242d;
+  }
+}
+@media screen and (max-width:750px){
+  .fs{
+    font-size: 150px;
+    background-color: #1f242d;
+  }
+}
+@media screen and (max-width:700px) {
+  nav.navbar{
+    display: none;
+  }
+  
+  header{
+    padding: 0px;
+  }
+  header p.logo{
+    position: absolute;
+    width: 200px;
+    top: 50px;
+      left: 20%;
+  }
+  .ofc{
+    display: block;
+      position: absolute;
+      right: 20%;
+      top: 40px;
+  }
+  .col-md-6{
+    border: 5px solid #0ef;
+    border-radius: 20px;
+    height: 700px;
+    margin: 10px;
+  }
+}
+
+    @media screen and (max-width:350px){
+      .fs{
+        font-size: 100px;
+        background-color: #1f242d;
+      }
+      .container{
+        padding: 0px;
+        margin: 0px;
+      }
+    }

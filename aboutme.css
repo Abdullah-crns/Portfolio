@@ -1,0 +1,202 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #1f242d;
+}
+
+.header {
+width: auto;
+  padding: 50px 150px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+    padding-top: 10px;
+    z-index: 100;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slideRight 1s ease forwards;
+}
+.navbar{
+  padding-left: 100px;
+}
+.navbar a{
+    z-index: 100;
+  position: relative;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  animation: slideTop 1s;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbar a:hover {
+  color: #0ef;
+}
+.navbar a.active {
+  color: #0ef;
+}
+.ofc{
+    z-index: 100;
+}
+main{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    
+   
+}
+
+.t{
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.htmlcssjs-projects a{
+    text-decoration: none;
+}
+.htmlcssjs-projects a{
+    color: white;
+}
+.htmlcssjs-projects a:hover{
+    color: #0ef;
+}
+.t{
+    color: white;
+}
+.t:hover{
+    color: #0ef;
+}
+.container{
+    position: absolute;
+    top: 20%;
+}
+.web{
+    color: #0ef;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidebottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.web {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40) infinite, 0.75s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: auto;
+    width: 200px;
+    height: 30px;
+}
+.ofc{
+    display: none;
+    background-color: #1f242d;
+}
+@media screen and (max-width:700px) {
+    .navbar{
+        display: none;
+    }
+    
+    header{
+        padding: 0px;
+    }
+    header p.logo{
+        position: absolute;
+        width: 200px;
+        top: 50px;
+        left: 20%;
+    }
+    .ofc{
+        display: block;
+        position: absolute;
+        right: 10%;
+        width: 100px;
+        height: 30px;
+        top: 62px;
+        color: white;
+    }
+}
